@@ -1,3 +1,6 @@
 fn main() {
-    todo!();
+    proconio::input! {
+        n: usize,
+        s: proconio::marker::Chars,
+    }
 }
