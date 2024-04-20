@@ -8,9 +8,7 @@ fn main() {
     }
     let mut counter = BTreeMap::new();
     for c in s.iter() {
-        counter.entry(*c)
-            .and_modify(|v| *v += 1)
-            .or_insert(1usize);
+        counter.entry(*c).and_modify(|v| *v += 1).or_insert(1usize);
     }
     let mut ans = s.len() * (s.len() - 1) / 2;
     let mut id = 0usize;
